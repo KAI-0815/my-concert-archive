@@ -1,0 +1,1161 @@
+.page {
+  min-height: 100vh;
+  background: #f4f2ee;
+  color: #181818;
+  padding: 0 6vw 80px;
+}
+
+/* =========================
+   顶部导航
+========================= */
+
+.header {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d8d5cf;
+}
+
+.logo {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.header-right {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+}
+
+/* =========================
+   首页 Hero
+========================= */
+
+.hero {
+  min-height: 520px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 80px 0 90px;
+  border-bottom: 1px solid #d8d5cf;
+}
+
+.hero-text {
+  max-width: 720px;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: #77736c;
+}
+
+.hero h1 {
+  margin: 18px 0 25px;
+  font-size: clamp(48px, 7vw, 88px);
+  line-height: 1.05;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+.hero-description {
+  margin: 0;
+  color: #77736c;
+  font-size: 16px;
+}
+
+.hero-number {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 5px;
+}
+
+.hero-number span {
+  font-size: 72px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.hero-number small {
+  margin-top: 8px;
+  color: #77736c;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+}
+
+/* =========================
+   顶部数据
+========================= */
+
+.stats {
+  display: flex;
+  gap: 80px;
+  padding: 35px 0;
+  border-bottom: 1px solid #d8d5cf;
+}
+
+.stat {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.stat strong {
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.stat span {
+  color: #77736c;
+  font-size: 14px;
+}
+
+/* =========================
+   通用区域标题
+========================= */
+
+.section-title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 38px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.section-title button {
+  border: 1px solid #181818;
+  background: transparent;
+  padding: 11px 17px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.25s ease;
+}
+
+.section-title button:hover {
+  background: #181818;
+  color: white;
+}
+
+/* =========================
+   年度记录
+========================= */
+
+.year-record {
+  margin-top: 90px;
+  padding: 60px 0;
+  border-top: 1px solid #d8d5cf;
+  border-bottom: 1px solid #d8d5cf;
+}
+
+.year-record-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #d8d5cf;
+}
+
+.year-record-item {
+  padding: 35px 30px 30px 0;
+  border-right: 1px solid #d8d5cf;
+}
+
+.year-record-item:not(:first-child) {
+  padding-left: 30px;
+}
+
+.year-record-item:last-child {
+  border-right: none;
+}
+
+.year-record-item strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 56px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+.year-record-item span {
+  color: #77736c;
+  font-size: 13px;
+}
+
+/* =========================
+   演唱会区域
+========================= */
+
+.concert-section {
+  padding-top: 80px;
+}
+
+/* =========================
+   搜索
+========================= */
+
+.search-box {
+  margin: 0 0 45px;
+  position: relative;
+}
+
+.search-box::before {
+  content: "SEARCH";
+  display: block;
+  margin-bottom: 10px;
+  color: #aaa69e;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  border-bottom: 1px solid #bdb9b1;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  color: #181818;
+  transition: border-color 0.2s ease;
+}
+
+.search-box input:focus {
+  border-bottom-color: #181818;
+}
+
+.search-box input::placeholder {
+  color: #aaa69e;
+}
+
+/* =========================
+   演唱会卡片
+========================= */
+
+.concert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px 25px;
+}
+
+.concert-card {
+  position: relative;
+  cursor: pointer;
+}
+
+.poster {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: #ddd9d1;
+}
+
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.concert-card:hover .poster img {
+  transform: scale(1.05);
+}
+
+.card-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 18px 2px 35px;
+}
+
+.card-info h3 {
+  margin: 0 0 7px;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.card-info p {
+  margin: 0;
+  color: #77736c;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.concert-number {
+  display: block;
+  margin-bottom: 10px;
+  color: #aaa69e;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0.18em;
+}
+
+.arrow {
+  font-size: 20px;
+  line-height: 1;
+  color: #77736c;
+  transition: transform 0.3s ease;
+}
+
+.concert-card:hover .arrow {
+  transform: translate(4px, -4px);
+}
+
+/* =========================
+   时间轴
+========================= */
+
+.timeline {
+  margin-top: 90px;
+  padding-top: 60px;
+  border-top: 1px solid #d8d5cf;
+}
+
+.timeline-list {
+  position: relative;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 140px 40px 1fr;
+  min-height: 110px;
+}
+
+.timeline-date {
+  padding-top: 5px;
+  color: #77736c;
+  font-size: 14px;
+}
+
+.timeline-line {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline-line::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  width: 1px;
+  background: #c8c4bc;
+}
+
+.timeline-line span {
+  position: relative;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  margin-top: 7px;
+  border: 2px solid #181818;
+  border-radius: 50%;
+  background: #f4f2ee;
+}
+
+.timeline-info {
+  padding: 0 0 45px 30px;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.timeline-info:hover {
+  transform: translateX(8px);
+}
+
+.timeline-number {
+  display: block;
+  margin-bottom: 10px;
+  color: #aaa69e;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  transition: color 0.25s ease;
+}
+
+.timeline-info:hover .timeline-number {
+  color: #181818;
+}
+
+.timeline-info h3 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.timeline-info p {
+  margin: 0;
+  color: #77736c;
+  font-size: 14px;
+}
+
+/* =========================
+   城市足迹
+========================= */
+
+.cities {
+  margin-top: 90px;
+  padding: 70px 0 30px;
+  border-top: 1px solid #d8d5cf;
+}
+
+.city-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 850px;
+}
+
+.city-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border: 1px solid #d8d5cf;
+  background: transparent;
+  font-size: 14px;
+  cursor: default;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.city-dot {
+  width: 7px;
+  height: 7px;
+  border: 1px solid #181818;
+  border-radius: 50%;
+  background: #f4f2ee;
+  transition: background 0.25s ease;
+}
+
+.city-item:hover {
+  background: #181818;
+  color: white;
+  border-color: #181818;
+  transform: translateY(-3px);
+}
+
+.city-item:hover .city-dot {
+  background: white;
+  border-color: white;
+}
+
+/* =========================
+   详情弹窗
+========================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 20, 20, 0.62);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  z-index: 100;
+}
+
+.modal {
+  position: relative;
+  width: min(920px, 100%);
+  max-height: 90vh;
+  background: #f4f2ee;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+}
+
+.modal-image {
+  width: 100%;
+  height: 100%;
+  min-height: 620px;
+  object-fit: cover;
+  display: block;
+}
+
+.modal-content {
+  padding: 65px 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-content .eyebrow {
+  margin-bottom: 18px;
+}
+
+.modal-content h2 {
+  margin: 0 0 18px;
+  font-size: 54px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+.modal-date {
+  margin: 0 0 8px;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+}
+
+.modal-venue {
+  margin: 0;
+  color: #77736c;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.rating {
+  display: flex;
+  gap: 6px;
+  margin: 42px 0;
+}
+
+.star {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #c8c4bc;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.star:hover {
+  transform: translateY(-2px);
+  color: #77736c;
+}
+
+.star.active {
+  color: #181818;
+}
+
+.note {
+  border-top: 1px solid #d8d5cf;
+  padding-top: 24px;
+}
+
+.note h3 {
+  margin: 0 0 12px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #77736c;
+}
+
+.note p {
+  margin: 0;
+  color: #55514b;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.close-button {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: rgba(244, 242, 238, 0.9);
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.25s ease;
+}
+
+.close-button:hover {
+  background: #181818;
+  color: white;
+}
+
+/* =========================
+   编辑 / 删除按钮
+========================= */
+
+.edit-button {
+  margin-top: 24px;
+  width: 100%;
+  padding: 14px 20px;
+  border: 1px solid #181818;
+  background: #181818;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.25s ease;
+}
+
+.edit-button:hover {
+  background: transparent;
+  color: #181818;
+}
+
+.delete-button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #999;
+  background: transparent;
+  color: #555;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+.delete-button:hover {
+  background: #181818;
+  color: white;
+  border-color: #181818;
+}
+
+/* =========================
+   添加 / 编辑表单
+========================= */
+
+.add-form {
+  position: relative;
+  width: min(600px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #f4f2ee;
+  padding: 50px;
+}
+
+.add-form h2 {
+  margin: 0 0 35px;
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.form-field {
+  margin-bottom: 22px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #77736c;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 13px 0;
+  border: none;
+  border-bottom: 1px solid #bdb9b1;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-field textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-bottom-color: #181818;
+}
+
+.save-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #181818;
+  background: #181818;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: opacity 0.2s ease;
+}
+
+.save-button:hover {
+  opacity: 0.8;
+}
+
+.image-preview {
+  width: 180px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+  margin-top: 15px;
+}
+
+/* =========================
+   平板
+========================= */
+
+@media (max-width: 900px) {
+  .concert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   手机
+========================= */
+
+@media (max-width: 700px) {
+  .page {
+    padding: 0 20px 60px;
+  }
+
+  .header {
+    height: 70px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 60px 0;
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero-number {
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+
+  .hero-number span {
+    font-size: 60px;
+  }
+
+  .stats {
+    gap: 25px;
+  }
+
+  .stat {
+    display: block;
+  }
+
+  .stat strong {
+    display: block;
+    font-size: 28px;
+  }
+
+  .stat span {
+    font-size: 12px;
+  }
+
+  .section-title {
+    display: block;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .section-title button {
+    width: 100%;
+  }
+
+  .concert-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .search-box {
+    margin-bottom: 35px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 90px 30px 1fr;
+  }
+
+  .timeline-info {
+    padding-left: 20px;
+  }
+
+  .timeline-info h3 {
+    font-size: 20px;
+  }
+
+  .year-record {
+    margin-top: 65px;
+    padding: 45px 0;
+  }
+
+  .year-record-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .year-record-item {
+    padding: 25px 0;
+    border-right: none;
+    border-bottom: 1px solid #d8d5cf;
+  }
+
+  .year-record-item:not(:first-child) {
+    padding-left: 0;
+  }
+
+  .year-record-item:last-child {
+    border-bottom: none;
+  }
+
+  .year-record-item strong {
+    font-size: 46px;
+  }
+
+  .modal {
+    width: 100%;
+    max-height: 92vh;
+    grid-template-columns: 1fr;
+    overflow-y: auto;
+  }
+
+  .modal-image {
+    min-height: 350px;
+    max-height: 430px;
+  }
+
+  .modal-content {
+    padding: 40px 25px 35px;
+  }
+
+  .modal-content h2 {
+    font-size: 40px;
+  }
+
+  .rating {
+    margin: 30px 0;
+  }
+
+  .close-button {
+    top: 12px;
+    right: 12px;
+  }
+
+  .add-form {
+    padding: 35px 25px;
+  }
+
+  .add-form h2 {
+    font-size: 36px;
+  }
+}
+
+/* =========================
+   小手机
+========================= */
+
+@media (max-width: 600px) {
+  .concert-grid {
+    gap: 30px;
+  }
+}
+.city-item-active {
+  background: #181818;
+  color: white;
+  border-color: #181818;
+}
+
+.city-item-active .city-dot {
+  background: white;
+  border-color: white;
+}
+/* =========================
+   年度回顾
+========================= */
+
+.year-summary {
+  margin-top: 45px;
+  padding-top: 35px;
+  border-top: 1px solid #d8d5cf;
+}
+
+.year-summary p {
+  margin: 0 0 25px;
+  font-size: 22px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.year-summary p strong {
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.year-summary-cities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.year-summary-cities span {
+  padding: 8px 14px;
+  border: 1px solid #d8d5cf;
+  color: #77736c;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  transition: all 0.25s ease;
+}
+
+.year-summary-cities span:hover {
+  background: #181818;
+  color: white;
+  border-color: #181818;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .year-summary {
+    margin-top: 35px;
+    padding-top: 28px;
+  }
+
+  .year-summary p {
+    font-size: 18px;
+  }
+
+  .year-summary p strong {
+    font-size: 28px;
+  }
+}
+/* =========================
+   年度亮点
+========================= */
+
+.year-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 45px;
+  border-top: 1px solid #d8d5cf;
+}
+
+.year-highlight {
+  padding: 35px 30px 10px 0;
+  border-right: 1px solid #d8d5cf;
+}
+
+.year-highlight:not(:first-child) {
+  padding-left: 30px;
+}
+
+.year-highlight:last-child {
+  border-right: none;
+}
+
+.year-highlight > span {
+  display: block;
+  margin-bottom: 18px;
+  color: #aaa69e;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+}
+
+.year-highlight strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.year-highlight p {
+  margin: 0;
+  color: #77736c;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .year-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .year-highlight {
+    padding: 25px 0;
+    border-right: none;
+    border-bottom: 1px solid #d8d5cf;
+  }
+
+  .year-highlight:not(:first-child) {
+    padding-left: 0;
+  }
+
+  .year-highlight:last-child {
+    border-bottom: none;
+  }
+}
+/* =========================
+   卡片评分
+========================= */
+
+.card-rating {
+  display: flex;
+  gap: 3px;
+  margin-top: 12px;
+}
+
+.card-rating span {
+  color: #d2cec6;
+  font-size: 11px;
+  line-height: 1;
+}
+
+.card-rating span.active {
+  color: #181818;
+}
+/* =========================
+   排序
+========================= */
+
+.sort-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin: -25px 0 35px;
+}
+
+.sort-box span {
+  color: #aaa69e;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+}
+
+.sort-box select {
+  padding: 8px 28px 8px 0;
+  border: none;
+  border-bottom: 1px solid #bdb9b1;
+  background: transparent;
+  color: #181818;
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+.sort-box select:focus {
+  border-bottom-color: #181818;
+}
+
+@media (max-width: 700px) {
+  .sort-box {
+    justify-content: flex-start;
+    margin: -15px 0 30px;
+  }
+}
+/* =========================
+   城市路线
+========================= */
+
+.city-route {
+  display: flex;
+  align-items: flex-start;
+  overflow-x: auto;
+  padding: 20px 0 35px;
+}
+
+.route-item {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.route-city {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 130px;
+  cursor: pointer;
+}
+
+.route-number {
+  margin-bottom: 14px;
+  color: #aaa69e;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+}
+
+.route-dot {
+  width: 12px;
+  height: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #181818;
+  border-radius: 50%;
+  background: #f4f2ee;
+  transition: all 0.25s ease;
+}
+
+.route-name {
+  font-size: 16px;
+  transition: transform 0.25s ease;
+}
+
+.route-line {
+  width: 100px;
+  height: 1px;
+  margin-top: 46px;
+  background: #c8c4bc;
+}
+
+.route-city:hover .route-dot {
+  background: #181818;
+  transform: scale(1.25);
+}
+
+.route-city:hover .route-name {
+  transform: translateY(-2px);
+}
+
+.route-city-active .route-dot {
+  background: #181818;
+  transform: scale(1.25);
+}
+
+.route-city-active .route-name {
+  font-weight: 600;
+}
+
+.city-route + .city-list {
+  margin-top: 10px;
+}
+/* =========================
+   详情页档案信息
+========================= */
+
+.modal-number {
+  margin: 0 0 18px;
+  color: #aaa69e;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+}
+
+.concert-status {
+  display: inline-block;
+  width: fit-content;
+  padding: 6px 12px;
+  margin-bottom: 25px;
+  border: 1px solid #d8d5cf;
+  color: #77736c;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
