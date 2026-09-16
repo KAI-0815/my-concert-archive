@@ -6,7 +6,7 @@ const initialConcerts = [
         "city": "大连",
         "date": "2026-05-03",
         "venue": "大连体育中心体育馆",
-        "image":"/tickets/1.jpg",
+        "image":"./tickets/1.jpg",
         "id": 1789277018632,
         "rating": 5
     },
@@ -15,7 +15,7 @@ const initialConcerts = [
         "city": "北京",
         "date": "2026-03-21",
         "venue": "国家体育馆",
-        "image":"/tickets/2.jpg",
+        "image":"./tickets/2.jpg",
         "note": "T.I.A",
         "id": 1789278203961,
         "rating": 5
@@ -25,7 +25,7 @@ const initialConcerts = [
         "city": "北京",
         "date": "2026-04-03",
         "venue": "国家体育场（鸟巢）",
-        "image":"/tickets/3.jpg",
+        "image":"./tickets/3.jpg",
         "note": "开往1982",
         "id": 1789279257809,
         "rating": 3
@@ -35,7 +35,7 @@ const initialConcerts = [
         "city": "苏州",
         "date": "2026-04-12",
         "venue": "苏州奥林匹克体育中心体育场",
-        "image":"/tickets/4.jpg",
+        "image":"./tickets/4.jpg",
         "note": "日落以后，我在苏州",
         "id": 1789279315840,
         "rating": 5
@@ -45,7 +45,7 @@ const initialConcerts = [
         "city": "北京",
         "date": "2026-06-14",
         "venue": "国家体育场（鸟巢）",
-        "image":"/tickets/5.jpg",
+        "image":"./tickets/5.jpg",
         "note": "It's my pleasure.",
         "id": 1789279386896,
         "rating": 5
@@ -55,7 +55,7 @@ const initialConcerts = [
         "city": "青岛",
         "date": "2026-06-28",
         "venue": "青岛市民健身中心体育馆",
-        "image":"/tickets/6.jpg",
+        "image":"./tickets/6.jpg",
         "note": "一粒10TH",
         "id": 1789279473054,
         "rating": 4
@@ -65,7 +65,7 @@ const initialConcerts = [
         "city": "上海",
         "date": "2026-10-10",
         "venue": "上海虹口足球场",
-        "image":"/tickets/7.jpg",
+        "image":"./tickets/7.jpg",
         "note": "聆听生命原始，内在之音",
         "id": 1789279527315
     },
@@ -74,7 +74,7 @@ const initialConcerts = [
         "city": "郑州",
         "date": "2026-04-18",
         "venue": "郑州奥体中心体育馆",
-        "image":"/tickets/8.jpg",
+        "image":"./tickets/8.jpg",
         "note": "皇后与梦想",
         "id": 1789279591278,
         "rating": 4
@@ -84,7 +84,7 @@ const initialConcerts = [
         "city": "北京",
         "date": "2026-05-23",
         "venue": "北京首都体育馆",
-        "image":"/tickets/9.jpg",
+        "image":"./tickets/9.jpg",
         "note": "发生什么事，天知道.",
         "id": 1789279639636,
         "rating": 4
@@ -94,7 +94,7 @@ const initialConcerts = [
         "city": "太原",
         "date": "2026-05-16",
         "venue": "太原体育中心体育场",
-        "image":"/tickets/10.jpg",
+        "image":"./tickets/10.jpg",
         "note": "茹果，我不唱情歌\n那我还能唱什么呢",
         "id": 1789279777606,
         "rating": 5
@@ -104,7 +104,7 @@ const initialConcerts = [
         "city": "杭州",
         "date": "2026-10-09",
         "venue": "杭州奥体中心体育场（大莲花）",
-        "image":"/tickets/11.jpg",
+        "image":"./tickets/11.jpg",
         "note": "日落以后，我在杭州",
         "id": 1789308580278
     },
@@ -113,7 +113,7 @@ const initialConcerts = [
         "city": "西安",
         "date": "2026-02-07",
         "venue": "西安奥体中心体育馆",
-        "image":"/tickets/12.jpg",
+        "image":"./tickets/12.jpg",
         "note": "每个人的房间里都有一只大象.",
         "id": 1789308629278,
         "rating": 5
@@ -123,7 +123,7 @@ const initialConcerts = [
         "city": "石家庄",
         "date": "2026-09-26",
         "venue": "河北奥林匹克中心体育场",
-        "image":"/tickets/13.jpg",
+        "image":"./tickets/13.jpg",
         "note": "可不可以偶尔下雨不必永远晴天.",
         "id": 1789308684097
     }
